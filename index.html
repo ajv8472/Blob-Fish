@@ -1,39 +1,49 @@
 <!DOCTYPE html>
 <html>
-	<head><title>Blob Fish</title></head>
-	<body>
-		<div class="bobo"></div>
-		<div class="obob"></div>
-		<div class="bob"></div>
-		
-		<style>
-		div.bobo{
-		    border: solid black;
-		    background-color: black;
-		    width: 100;
-		    margin: 40;
-		    height:200;
+	<head>
+		<title>HTMLhouse</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<style type="text/css">
+		.B{
+		    color: Blue;
+		    background-color: Blue;
 		}
-		div.obob{
-		    border: solid black;
-		    background-color: black;
-		    width: 100;
-		    margin: 40;
-		    position: absolute;
-		    left: 150;
-		    top: 0;
-		    height: 200;
+		.B:hover{
+		    color: white;
 		}
-		div.bob{
-		    border: solid black;
-		    background-color:black;
-		    width: 250;
-		    height:100;
-		    position: absolute;
-		    top: 250;
-		    right: .1px;
-		}
+		@keyframes example {
+    from {background-color: black; width: 200px; height: 100px;}
+    to {background-color: white; width: 400px; height: 200px;}
+}
+
+#animate-me {
+    background-color: black;
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+#animate-me:hover{
+    animation-name: example;
+    animation-duration: 10s;
+}
+#title{
+  background-image: url(http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117);
+  padding: 200px;
+  font-weight: 100000000;
+  font-size: 50pt;
+}
 		</style>
-		
+	</head>
+	<body>
+	<span class="B"><b> Good Morning people of Earth</b></span>
+	<h1 id="title"> Blob Fish's<s> need your help</s></h1>
+	<h2> A bio about the Blob's</h2>
+	<img src=http://cdn1.theinertia.com/wp-content/uploads/2014/04/blobfish-psychrolutes-marcidus.jpg><br>
+	<a href="https://en.wikipedia.org/wiki/Blobfish" target="_blank">Click Here</a>
+	<i> Do not let looks decieve you the Blob Fish is a wonderful animal it has many awards including the World's Ugliest Animal! GO Blob GO</i>
+	<s> The Blob Fish is a very pretty animal and lives off the coast of Australia</s><b> The Blob Fish actually has over 12k followers on Facebook which is a lot if you were wondering</b>
+	<div id="animate-me">Protect the Blob's!</div>
 	</body>
 </html>
